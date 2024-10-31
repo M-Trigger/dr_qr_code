@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: 'Mahoor';
+  src: url('./public/Mahoor.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MahoorFD';
+  src: url('./public/MahoorFD.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'iranSansB';
+  src: url('./public/iranSansB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KahrobaB';
+  src: url('./public/KahrobaB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-with-border {
+  color: FD8B51; /* Text color */
+  text-shadow: 
+    1px 1px 0 white,   /* Right bottom */
+    -1px 1px 0 white,  /* Left bottom */
+    1px -1px 0 white,  /* Right top */
+    -1px -1px 0 white; /* Left top */
+}
+
+
+.text-with-border_white {
+  color: white; /* Text color */
+  text-shadow: 
+    1px 1px 0 black,   /* Right bottom */
+    -1px 1px 0 black,  /* Left bottom */
+    1px -1px 0 black,  /* Right top */
+    -1px -1px 0 black; /* Left top */
+}
+.text_rtl{
+  direction: rtl;
+}

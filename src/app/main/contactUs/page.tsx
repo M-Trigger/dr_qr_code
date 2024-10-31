@@ -1,4 +1,4 @@
-import Logo from "@/app/public/dcLogo.svg"
+// import Logo from "@/app/public/dcLogo.svg"
 import happy_face from "@/app/public/happy_face.png"
 import Image from "next/image"
 export default function main(){

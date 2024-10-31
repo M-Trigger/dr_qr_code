@@ -35,8 +35,8 @@ export default function Main(
     },[router])
 
     return (
-        <div className="w-full h-screen bg-primaryColor flex flex-row justify-center items-center py-6 lg:py-0 overflow-auto ">
-            <div className="w-2/3 h-screen sm:h-full lg:h-[80%]  lg:max-h-[700px] max-w-[1100px] bg-secondaryColor rounded-lg flex flex-col px-2 md:px-8 py-2">
+        <div className="w-full h-screen bg-primaryColor flex flex-row justify-center items-center py-6 lg:py-0 overflow-auto">
+            <div className="w-2/3 mt-10 seToHigher:mt-0 seToHigher:h-screen sm:h-full lg:h-[80%]  lg:max-h-[700px] max-w-[1100px] bg-secondaryColor rounded-lg flex flex-col px-2 md:px-8 py-2">
                 <div className="h-16 w-full  flex flex-row-reverse justify-between">
                     <div className="sm:h-0 sm:w-0 h-full w-12 flex flex-row justify-center items-center visible sm:invisible">
                         <Image src={menu} alt="menu" className="" onClick={() => setShowStatus(!showStatus)}></Image>
@@ -68,11 +68,11 @@ export default function Main(
                     </div>
                     <div className=" lg:w-2/3 h-full flex flex-col ">
                     
-                        <div className=" w-full h-full ">
-                            <div className={`bg-primaryColor ${showStatus ? "w-full h-12 mb-4 flex flex-row" : "hidden"} space-x-2 justify-center items-center`}>
-                            <Link href={"/main"}  className={`font-KahrobaB ${menuItem == "mainPage" ? "text-accentColor" : "text-white"} text-xs`}>صفحه اصلی</Link >
-                            <Link href={"/main/contactUs"}  className={`font-KahrobaB ${menuItem == "contactUs" ? "text-accentColor" : "text-white"} text-xs`}>ارتباط با ما</Link >
+                        <div className=" w-full h-full  ">
+                            <div className={`bg-primaryColor ${showStatus ? "w-full h-12 mb-4 flex flex-rows space-x-2" : "hidden"} space-x-2 justify-center items-center`}>
                             <Link href={"/main/aboutUs"}  className={`font-KahrobaB ${menuItem == "aboutUs" ? "text-accentColor" : "text-white"} text-xs`}>درباره ما</Link >
+                            <Link href={"/main/contactUs"}  className={`font-KahrobaB ${menuItem == "contactUs" ? "text-accentColor" : "text-white"} text-xs`}>ارتباط با ما</Link >
+                            <Link href={"/main"}  className={`font-KahrobaB ${menuItem == "mainPage" ? "text-accentColor" : "text-white"} text-xs`}>صفحه اصلی</Link >
                             </div>
                             {children}
 

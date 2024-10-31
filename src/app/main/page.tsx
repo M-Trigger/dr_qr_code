@@ -8,7 +8,7 @@ export default function main(){
     // }
     return (
         <div className="w-full h-full flex flex-col items-end px-2 py-2 ">
-            <h1 className="font-KahrobaB text-lg md:text-2xl mt-2 sm:mt-8 text-gray-700 ">
+            <h1 className="font-KahrobaB text-lg md:text-2xl mt-2 sm:mt-8 text-gray-700 text_rtl ">
             بدون نیاز به مراجعه حضوری!! 
             </h1>
             <p className="font-KahrobaB mt-6 text-dengerColor text-right text-base md:text-lg">شما می توانید فقط با لمس لینک تماس انلاین مستقیما به متصدی داروخانه متصل شوید و به راحتی داروهایتان را تهیه کنید</p>
